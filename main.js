@@ -1,4 +1,5 @@
 // Funzione
+// crea album da appendere
 
 function getMusic (music) {
 
@@ -16,6 +17,7 @@ function getMusic (music) {
 
 
 $(document).ready(function() {
+  // stampo album presi da api
   $.ajax(
   {
     "url": "https://flynn.boolean.careers/exercises/api/array/music",
@@ -27,4 +29,11 @@ $(document).ready(function() {
     alert("E' avvenuto un errore. " + errore);
     }
   });
+
+  // selezione genere
+  function checkGenre (evt) {
+  if (evt.target.value === "jazz") {
+    alert('Hello');
+    }
+  }
 });
