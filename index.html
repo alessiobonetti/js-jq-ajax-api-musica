@@ -15,9 +15,26 @@
             </div>
         </header>
 
+        <!-- filtro genere -->
+        <div class="selection_container">
+          <div class="selection">
+            <select class="genre_selection" name="">
+              <option value="all">all genre</option>
+              <option value="jazz">jazz</option>
+              <option value="pop">pop</option>
+              <option value="rock">rock</option>
+              <option value="metal">metal</option>
+            </select>
+          </div>
+        </div>
+        <!-- /filtro genere -->
+
+        <!-- container per stampare gli album -->
         <div class="cds-container container">
 
         </div>
+        <!-- /container per stampare gli album -->
+        <!-- Template -->
         <script id="music-template" type="text/x-handlebars-template">
           <div class="cd">
             <img src="{{poster}}" alt="img copertina">
@@ -27,7 +44,7 @@
             <span class="year">{{genre}}</span>
           </div>
         </script>
-
+        <!-- /Template -->
         <script src="main.js" charset="utf-8"></script>
     </body>
 </html>

@@ -10,10 +10,20 @@ body {
     min-height: 100vh;
 }
 
-.container {
+.container{
     width: 1070px;
     height: 100%;
     margin: 0 auto;
+}
+
+.selection_container {
+  width: 1070px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
 }
 
 header {
@@ -42,7 +52,7 @@ header img {
     flex-basis: 200px;
     padding: 20px;
     margin: 10px 20px;
-    height: 360px;
+    height: 370px;
     background: rgb(46, 58, 70);
     text-align: center;
 }
